@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlissMarket - Your Online Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">BlissMarket</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+        <!-- ✅ Only keep this Cart link -->
+        <li><a href="#" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Welcome to BlissMarket</h2>
+    <p>Your one-stop shop for everything!</p>
+    <button>Shop Now</button>
+  </section>
+
+  <!-- Products Section -->
+  <section class="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="images/product1.jpg" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>₹499</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/product2.jpg" alt="Product 2">
+        <h3>Product 2</h3>
+        <p>₹799</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="images/product3.jpg" alt="Product 3">
+        <h3>Product 3</h3>
+        <p>₹999</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 BlissMarket. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Sidebar Cart -->
+<div id="cart-modal" class="cart-modal">
+  <div class="cart-header">
+    <h2>Your Cart</h2>
+    <span class="close-btn">&times;</span>
+  </div>
+  <div id="cart-items"></div>
+  <h3>Total: ₹<span id="cart-total">0</span></h3>
+</div>
+</div>
+
+  <!-- ✅ Move script to very end -->
+  <script src="script.js"></script>
+</body>
+</html>
